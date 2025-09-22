@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lA0-7H-G7E">
+    <device id="iPad13_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hosting Controller-->
+        <scene sceneID="lJ6-Im-TIW">
+            <objects>
+                <hostingController id="7WC-Gp-01p" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k82-wS-DNu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="-1215"/>
+        </scene>
+        <!--Page Two View Controller-->
+        <scene sceneID="c6W-hK-S4T">
+            <objects>
+                <viewController storyboardIdentifier="PageTwoViewController" id="itT-Ph-fcG" customClass="PageTwoViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="81U-Ym-inR">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="fPK-4t-Fwu">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-d5-gty">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fK-vy-15q">
+                                <rect key="frame" x="160" y="60" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-Yl-CyK">
+                                <rect key="frame" x="423" y="824" width="531" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">No need to be poised, I’ll wipe your smile away,
+Even if you vanish, I’ll find you with no delay!
+You’re not the best at hide and seek, that much is true.
+I’ll start counting to ten, and then I’ll look all through!
+So run if you really must, go hide where you may,
+Whether ready or not, I’ll be coming your way!
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EoZ-4U-YzW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="1fK-vy-15q" id="MLy-og-Mgw"/>
+                        <outlet property="pageTwoText" destination="1Ii-Yl-CyK" id="qPC-ae-3dQ"/>
+                        <outlet property="playButton" destination="Ycr-d5-gty" id="Cig-I0-qAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcd-Uy-zfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.9825581395348" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Three View Controller-->
+        <scene sceneID="Oz2-au-hZl">
+            <objects>
+                <viewController storyboardIdentifier="PageThreeViewController" id="YOR-UH-vLn" customClass="PageThreeViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zxc-KT-bUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="TUI-94-cAR">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzo-iN-lU9">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfx-TT-838">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvI-zu-Xk7">
+                                <rect key="frame" x="414" y="764" width="548" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Come out, come out, my dear friend wherever you roam,
+I’ll easily track you down and bring you back home!
+Robert, I see you and your hair is sticking out,
+All of that boasting? I’ve found you without a doubt!
+But wait—who is that with a sneer and a dark grin?
+It’s a shadowy man with a sack made of skin…
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bno-3o-poQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="Rfx-TT-838" id="yuY-Fa-dUv"/>
+                        <outlet property="pageThreeText" destination="EvI-zu-Xk7" id="fyu-bV-Lf6"/>
+                        <outlet property="playButton" destination="bzo-iN-lU9" id="5uH-GP-vxv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPW-GX-2VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009.7383720930231" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Four View Controller-->
+        <scene sceneID="bHn-qf-Pee">
+            <objects>
+                <viewController storyboardIdentifier="PageFourViewController" id="lqn-wu-2Ef" customClass="PageFourViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JpU-0E-jtV">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page4" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-t3-iRT">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuE-H3-pWE">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNG-Rv-bLk">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z99-V8-f68">
+                                <rect key="frame" x="394" y="751" width="588" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">“Well golly, look what I’ve found!” the strange man declared,
+“A fine little boy—he’ll be sold soon, I’m prepared!
+Super strong ones like him fetch a price that is grand,
+So GET to the market young lad, just like I planned!”
+But then suddenly—ZOOM!—his eyes narrowed in place,
+He turned toward poor Alice and quickened his pace.
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R3h-i4-Zuy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="uNG-Rv-bLk" id="04C-vN-VRA"/>
+                        <outlet property="pageFourText" destination="Z99-V8-f68" id="EBH-EF-576"/>
+                        <outlet property="playButton" destination="RuE-H3-pWE" id="P0W-iK-fel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1n-ij-dyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708.7209302325582" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Five View Controller-->
+        <scene sceneID="Sxw-WT-LS7">
+            <objects>
+                <viewController storyboardIdentifier="PageFiveViewController" id="gYQ-BG-nze" customClass="PageFiveViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tg8-Mo-Fig">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page5" translatesAutoresizingMaskIntoConstraints="NO" id="OZJ-et-RPE">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-nw-LxO">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPe-B5-TCr">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFP-Ej-RQG">
+                                <rect key="frame" x="428" y="792" width="591" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">“Now don’t you dare go runnin’—just stay where you stand!
+I have room in my wagon for one more small hand!”
+But Alice leapt back, with her heart filled with much fright,
+She turned on her heel and ran into the dark night!
+Through brambles and through bushes, she dashed in a blur,
+With quick footsteps behind her—too close!—in a stir!
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XYq-EI-VFG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="TPe-B5-TCr" id="lJQ-Jw-ylK"/>
+                        <outlet property="pageFiveText" destination="gFP-Ej-RQG" id="Xbv-JC-7pY"/>
+                        <outlet property="playButton" destination="kw5-nw-LxO" id="zwt-Qj-cWf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W01-pV-Kh6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3430.8139534883721" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Six View Controller-->
+        <scene sceneID="dUX-Hy-318">
+            <objects>
+                <viewController storyboardIdentifier="PageSixViewController" id="6W0-qR-hUd" customClass="PageSixViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2zv-th-Io2">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page6" translatesAutoresizingMaskIntoConstraints="NO" id="MZf-B3-tpe">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ms-QO-YXy">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPt-m9-Y7J">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn6-8z-Cph">
+                                <rect key="frame" x="405" y="752" width="607" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Then—THUMP!—came a sound like a drum in the air,
+And torches lit up as brave men marched from nowhere!
+The ground seemed to rumble and the trees shook with might,
+As soldiers in navy blue stepped out of the night.
+A strong man on a horse, with a hat tall and grand,
+Pointed his finger straight at the cruel-looking man.
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4GV-1T-RWZ">
+                                <rect key="frame" x="933" y="342" width="50" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vjK-Xz-uqY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="zPt-m9-Y7J" id="rWw-2s-CEx"/>
+                        <outlet property="pageSixText" destination="Bn6-8z-Cph" id="8Gg-ur-VAV"/>
+                        <outlet property="playButton" destination="8ms-QO-YXy" id="VKP-y2-GnF"/>
+                        <outlet property="tapToShootArea" destination="4GV-1T-RWZ" id="dEj-qn-bWO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bn8-EH-Wzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4164.6802325581393" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Seven View Controller-->
+        <scene sceneID="gAB-p3-exy">
+            <objects>
+                <viewController storyboardIdentifier="PageSevenViewController" id="hY8-Ls-Y2k" customClass="PageSevenViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LPe-rV-rwF">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page7" translatesAutoresizingMaskIntoConstraints="NO" id="5Si-G0-ZHk">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Km7-zk-Ref">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00r-BT-xtb">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-qz-eWA">
+                                <rect key="frame" x="20" y="773" width="580" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">“Surrender!” he boomed, with a deep voice bold and true,
+“This war is now over—your wrongs are done and through!”
+The bad man with the sack tried to scurry away,
+But the soldiers were faster—he’d lost on this day.
+Alice stepped forward, her voice small but bright,
+“Why did you save me? Why join in this fight?”
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mrN-d8-jkH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="00r-BT-xtb" id="zlt-2S-voB"/>
+                        <outlet property="pageSevenText" destination="s9W-qz-eWA" id="4xI-Zp-tz8"/>
+                        <outlet property="playButton" destination="Km7-zk-Ref" id="Joh-8l-GTk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfY-pe-PRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4845.7848837209303" y="-865.11627906976742"/>
+        </scene>
+        <!--Page Eight View Controller-->
+        <scene sceneID="bdH-Mj-p8d">
+            <objects>
+                <viewController storyboardIdentifier="PageEightViewController" id="Hx9-Sv-vON" customClass="PageEightViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qP6-Xl-dln">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page8" translatesAutoresizingMaskIntoConstraints="NO" id="3Wu-oz-wyi">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt7-ol-AFG">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnK-7u-pPS">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9I-Ir-OT4">
+                                <rect key="frame" x="463" y="714" width="450" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The general smiled, as kind as could be,
+And lifted her up so her eyes meet with he.
+“No matter how small, no matter how tall,
+No person should ever be chained up at all.
+Freedom is something we all ought to share,
+No matter your color, your home, or your hair.”
+Then tipping his hat, he gave her a grin,
+And rode toward the dawn, as the world turned again.
+
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bWv-zJ-pin"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="GnK-7u-pPS" id="SjV-OO-BSt"/>
+                        <outlet property="pageEightText" destination="m9I-Ir-OT4" id="5MU-dU-474"/>
+                        <outlet property="playButton" destination="tt7-ol-AFG" id="Yy1-xg-wOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTB-U0-wNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5530.8139534883721" y="-865.11627906976742"/>
+        </scene>
+        <!--Ending View Controller-->
+        <scene sceneID="Ujo-Ae-UHL">
+            <objects>
+                <viewController storyboardIdentifier="EndingViewController" id="yeS-3J-gaQ" customClass="EndingViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="073-rc-ooe">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grant-horse" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-EZ-0Es">
+                                <rect key="frame" x="119" y="610" width="235" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LjJ-R9-UYK"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBU-fx-EIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6223.6918604651164" y="-865.11627906976742"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-JI-9iw">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIl-sR-jGY">
+                                <rect key="frame" x="646" y="473" width="106" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Story"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u1-T4-j9t">
+                                <rect key="frame" x="656" y="571" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Settings"/>
+                                <connections>
+                                    <segue destination="Lsb-t1-3Jb" kind="show" id="LFz-h0-gFH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-BS-D3l">
+                                <rect key="frame" x="623" y="679" width="153" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="About the author"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b3L-hr-g9i"/>
+                    <connections>
+                        <outlet property="authorButton" destination="4YD-BS-D3l" id="Rtq-XZ-uww"/>
+                        <outlet property="settingsButton" destination="3u1-T4-j9t" id="x9n-bD-Td2"/>
+                        <outlet property="storyButton" destination="JIl-sR-jGY" id="cOg-0K-dAf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769.18604651162786" y="-23.837209302325583"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="MWt-Gf-TPC">
+            <objects>
+                <viewController id="Lsb-t1-3Jb" customClass="Settings" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvu-Df-jtP">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="tit-ym-RZM">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R8-2C-q6M">
+                                <rect key="frame" x="76" y="93" width="128" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5By-Gi-x6f">
+                                <rect key="frame" x="279" y="242" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Read To Me">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Read to me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJa-ge-5bI">
+                                <rect key="frame" x="348" y="247" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9DL-LT-arR">
+                                <rect key="frame" x="308" y="310" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Automatically play on each page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZO-eo-vRw">
+                                <rect key="frame" x="370" y="315" width="263" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnT-UQ-KIC">
+                                <rect key="frame" x="308" y="373" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7na-ig-o8r">
+                                <rect key="frame" x="370" y="378" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bz4-ns-8EV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gDK-Lr-Z9u"/>
+                    <connections>
+                        <outlet property="automatic" destination="9DL-LT-arR" id="L8u-C1-ix1"/>
+                        <outlet property="readToMe" destination="5By-Gi-x6f" id="n9A-zf-NJz"/>
+                        <outlet property="tapToPlay" destination="vnT-UQ-KIC" id="uhC-1S-xVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v55-Jy-290" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512.6453488372092" y="-24.418604651162791"/>
+        </scene>
+        <!--Page One View Controller-->
+        <scene sceneID="ynS-DA-wJ6">
+            <objects>
+                <viewController storyboardIdentifier="PageOneViewController" id="WVk-hN-zmX" customClass="PageOneViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVc-9x-GEl">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZ9-lN-a62">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="7WC-Gp-01p" kind="embed" destinationCreationSelector="ShowPageOneView:" id="P9N-Rc-WTb"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jW-xv-EyN">
+                                <rect key="frame" x="98" y="62" width="43" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-5c-CN5">
+                                <rect key="frame" x="160" y="62" width="55" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur7-Ni-1Qw">
+                                <rect key="frame" x="440" y="787" width="532" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Hey Alice, just look! There is a forest so wide!
+With bushes to duck in, and trees where I can hide!
+Why don’t we play a quick game? Just try and find me!
+I’ll bet you can’t do it, just wait and you will see!
+Count up to ten, then come and find me if you dare!
+I’ll slip through the shadows and vanish in thin air!
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RNx-Bq-iRw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="cV2-5c-CN5" id="jRr-lF-U9L"/>
+                        <outlet property="pageOneText" destination="ur7-Ni-1Qw" id="lae-tQ-FXr"/>
+                        <outlet property="playButton" destination="8jW-xv-EyN" id="LwJ-lw-P1Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmr-qv-Qkx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59.738372093023251" y="-884.30232558139539"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ws4-l3-V5U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lA0-7H-G7E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z21-qX-2rP">
+                        <rect key="frame" x="0.0" y="24" width="1376" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dPw-OD-H1F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7St-Uz-JlT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.50847457627119" y="-23.414634146341463"/>
+        </scene>
+        <!--Author Info View Controller-->
+        <scene sceneID="kya-o5-ek0">
+            <objects>
+                <viewController storyboardIdentifier="AuthorInfoViewController" id="yUl-4R-3Ww" customClass="AuthorInfoViewController" customModule="HideAndSeekAndRunForFree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fg5-8V-zcc">
+                        <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="ShP-HP-ZfQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1376" height="1032"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About the Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-Gg-gq6">
+                                <rect key="frame" x="108" y="93" width="263" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-qs-qJw">
+                                <rect key="frame" x="535" y="350" width="500" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lester is a 4th year in the BX/MS program for Computer Science at the University of Chicago. He is a huge fan of Nintendo games and very much enjoyed Dr. Suess as a child!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lester" translatesAutoresizingMaskIntoConstraints="NO" id="sp1-fS-KJK">
+                                <rect key="frame" x="223" y="331" width="240" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c4V-jR-JQd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jT-Vc-8fn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.75" y="704.65116279069764"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lester" width="867" height="1264"/>
+        <image name="forest" width="612" height="350"/>
+        <image name="grant-horse" width="1024" height="1024"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="page2" width="1024" height="1024"/>
+        <image name="page3" width="1024" height="1024"/>
+        <image name="page4" width="1536" height="1024"/>
+        <image name="page5" width="1536" height="1024"/>
+        <image name="page6" width="1536" height="1024"/>
+        <image name="page7" width="1536" height="1024"/>
+        <image name="page8" width="1536" height="1024"/>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+        <image name="title" width="1536" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
