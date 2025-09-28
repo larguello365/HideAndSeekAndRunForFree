@@ -48,7 +48,7 @@
 ### 🛠 Development Environment
 
 - **Language**: Swift 5.0+
-- **Minimum iOS**: 13.0+
+- **Minimum iPadOS**: 13.0+
 - **Xcode**: 14.0+
 - **Frameworks**: UIKit, SwiftUI, SpriteKit, AVFoundation, Core Graphics
 
